@@ -12,7 +12,7 @@
 #define DegressToRadius(angle) (M_PI*(angle)/180.0f)
 
 static CGFloat const lineWidth = 10.f ;
-static CGFloat const animationDuration = 2.0 ;
+static CGFloat const animationDuration = 1.5 ;
 
 @interface CircleGradientProgressView ()
 

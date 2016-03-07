@@ -15,6 +15,7 @@
 		8433D3A91C894BE2007BA5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433D3A71C894BE2007BA5EE /* LaunchScreen.storyboard */; };
 		8433D3B41C894BE2007BA5EE /* YYCircleGradientProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433D3B31C894BE2007BA5EE /* YYCircleGradientProgressViewUITests.m */; };
 		8433D3C11C894C45007BA5EE /* CircleGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8433D3C01C894C45007BA5EE /* CircleGradientProgressView.m */; };
+		84E23C6C1C8D46FF005CDB6A /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E23C6B1C8D46FF005CDB6A /* GradientProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		8433D3B51C894BE2007BA5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8433D3BF1C894C45007BA5EE /* CircleGradientProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGradientProgressView.h; sourceTree = "<group>"; };
 		8433D3C01C894C45007BA5EE /* CircleGradientProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGradientProgressView.m; sourceTree = "<group>"; };
+		84E23C6A1C8D46FF005CDB6A /* GradientProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientProgressView.h; sourceTree = "<group>"; };
+		84E23C6B1C8D46FF005CDB6A /* GradientProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 			children = (
 				8433D3BF1C894C45007BA5EE /* CircleGradientProgressView.h */,
 				8433D3C01C894C45007BA5EE /* CircleGradientProgressView.m */,
+				84E23C6A1C8D46FF005CDB6A /* GradientProgressView.h */,
+				84E23C6B1C8D46FF005CDB6A /* GradientProgressView.m */,
 			);
 			path = CGProgressView;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8433D3A11C894BE2007BA5EE /* ViewController.m in Sources */,
+				84E23C6C1C8D46FF005CDB6A /* GradientProgressView.m in Sources */,
 				8433D39E1C894BE2007BA5EE /* AppDelegate.m in Sources */,
 				8433D39B1C894BE2007BA5EE /* main.m in Sources */,
 				8433D3C11C894C45007BA5EE /* CircleGradientProgressView.m in Sources */,
@@ -416,6 +422,7 @@
 				8433D3BA1C894BE2007BA5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8433D3BB1C894BE2007BA5EE /* Build configuration list for PBXNativeTarget "YYCircleGradientProgressViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				8433D3BD1C894BE2007BA5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

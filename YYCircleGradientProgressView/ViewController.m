@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "CircleGradientProgressView.h"
+#import "GradientProgressView.h"
 
 @interface ViewController ()<CGProgressViewDelegate>
 
 @property (nonatomic, strong) CircleGradientProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 
 @end
 
@@ -21,21 +23,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.stepper.continuous = YES ;
+    self.stepper.autorepeat = NO ;
+    self.stepper.value = 0.0 ;
+    self.stepper.minimumValue = 0.0 ;
+    self.stepper.maximumValue = 1.0 ;
+    self.stepper.stepValue = 0.2 ;
+    
     
     self.progressView = [[CircleGradientProgressView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     self.progressView.delegate = self;
     [self.view addSubview:self.progressView];
+    
+    NSArray *colors = @[(__bridge id)[UIColor yellowColor].CGColor,
+                        (__bridge id)[UIColor orangeColor].CGColor] ;
+    GradientProgressView *proView = [[GradientProgressView alloc] initWithFrame:CGRectMake(100, 320, 200, 10) andColors:colors];
+    [self.view addSubview:proView];
 }
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (IBAction)stepAction:(UIStepper *)sender
 {
-    
-    static CGFloat progress = 0.0 ;
-    
-    progress += 0.2 ;
+    CGFloat progress = sender.value ;
     
     self.progressView.progress = progress ;
 }
+
 
 - (void)labelClickedWithProgress:(CGFloat)progress
 {
